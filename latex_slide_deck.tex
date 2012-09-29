@@ -25,13 +25,16 @@
 \begin{itemize}
   \item TeX is a typesetting program
   \item LaTeX is a document preparation system
-  \item The result of compiling a document created in LaTeX is typically a PDF document
+  \item The result of compiling a document created in LaTeX is
+    typically a PDF document
   \item it's all plaintext, which means it has awesome features
     \begin{itemize}
-      \item version controllable with things like git, mercurial, subversion (gross) and CVS (grosser)
+    \item version controllable with things like git, mercurial,
+      subversion (gross) and CVS (grosser)
       \item compressable
       \item easily ported and emailed
       \item highly programmatic
+      \item encryptable with GnuPG
     \end{itemize}
 \end{itemize}
 \end{frame}
@@ -49,8 +52,10 @@
       \end{itemize}
     \item Programmatic
       \begin{itemize}
-        \item Means you can use fun languages like Python to generate really good looking reports from SQL databases
-        \item Or you can use with other usual suspects, like emacs org-mode and DocBook
+      \item Means you can use fun languages like Python to generate
+        really good looking reports from SQL databases
+      \item Or you can use with other usual suspects, like emacs
+        org-mode and DocBook
       \end{itemize}
   \end{itemize}
 \end{frame}
@@ -68,10 +73,33 @@
         \item The beginning (after the @Book) is the reference
           identifier, this can be used to create footnotes in your
           articles that will provide hyperreferential links within the
-          resulting PDF document, as well as do things like paranthetical citations
+          resulting PDF document, as well as do things like
+          paranthetical citations
+        \item the rest is self-explanatory
       \end{itemize}
   \end{itemize}
 \end{frame}
 
+\subsection{Tables}
+\begin{frame}
+  \frametitle{Tables}
+  \begin{itemize}
+  \item Tables are the cornerstone of good reporting
+  \item Be forewarned, tables take practice
+
+  \end{itemize}
+  \begin{table}
+    \centering
+    \begin{tabular}{|l|l|}
+      \hline
+      \multicolumn{2}{|c|}{Sample Table} \\
+      \hline
+      Data & 1 \\
+      Data & 2 \\
+      \hline
+    \end{tabular}
+  \end{table}
+
+\end{frame}
 
 \end{document}
