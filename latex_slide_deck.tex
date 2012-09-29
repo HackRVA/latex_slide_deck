@@ -1,5 +1,6 @@
 \documentclass{beamer}
 \usepackage[latin1]{inputenc}
+\usepackage{listings}
 \usetheme{Warsaw}
 \usecolortheme{wolverine}
 \title{LaTeX Primer}
@@ -50,6 +51,24 @@
       \begin{itemize}
         \item Means you can use fun languages like Python to generate really good looking reports from SQL databases
         \item Or you can use with other usual suspects, like emacs org-mode and DocBook
+      \end{itemize}
+  \end{itemize}
+\end{frame}
+
+\section{Tell me more!}
+\subsection{BibTeX}
+\begin{frame}
+  \frametitle{Tell me more!}
+  \begin{itemize}
+    \item BibTex
+      \begin{itemize}
+        \item Keep bibliographies in an easy-to-read plaintext document
+        \item example:
+          \lstinputlisting{sample-bibtex.tex}
+        \item The beginning (after the @Book) is the reference
+          identifier, this can be used to create footnotes in your
+          articles that will provide hyperreferential links within the
+          resulting PDF document, as well as do things like paranthetical citations
       \end{itemize}
   \end{itemize}
 \end{frame}
