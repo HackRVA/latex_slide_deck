@@ -95,4 +95,17 @@
   \lstinputlisting{table_sample.tex}  
 \end{frame}
 
+\section{More advanced tricks}
+\subsection{Inline script execution}
+\begin{frame}
+  \begin{itemize}
+    \item this is easily my favorite trick, inline shell execution
+    \item Let's assume I have a script that will return output
+      formatted in a certain way, generally by populating a file
+    \item Example: a mysql batch script that will pull values from a
+      database, pipe through sed, and then use awk to populate a LaTeX
+      table.
+  \end{itemize}
+\end{frame}
+
 \end{document}
